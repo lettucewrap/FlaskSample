@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 
 @app.route('/welcome/<name>')
-def dashboard(name):
+def welcome(name):
     return 'Welcome %s!' % name
 
 
