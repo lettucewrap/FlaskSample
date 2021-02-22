@@ -11,7 +11,7 @@ def welcome(name):
 def login():
     if request.method == 'POST':
         name = request.form['name']
-        return redirect(url_for('dashboard', name=name))
+        return redirect(url_for('welcome', name=name))
     else:
         name = request.args.get('name')
         return render_template('welcome.html')
